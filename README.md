@@ -1,5 +1,7 @@
 # Email Newsletter Generator Proposal
 
+See https://github.com/TheStanfordDaily/email-newsletter-generator.
+
 ## Architecture
 
 - MJML for email HTML (and the corresponding quirks)
