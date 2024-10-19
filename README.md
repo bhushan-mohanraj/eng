@@ -11,6 +11,13 @@ See https://github.com/TheStanfordDaily/email-newsletter-generator.
 ## Development
 
 ```bash
+python -m black . # Format
+python -m isort . --profile=black --sl # Sort imports
+```
+
+### Usage
+
+```bash
 python -m venv venv
 source venv/Scripts/activate # Git Bash on Windows
 python -m pip install -r requirements.txt
