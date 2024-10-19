@@ -31,7 +31,7 @@ class BaseSocialConfig:
     """
 
 
-# Links and images as of 2024-10-18.
+# All links and images are from The Daily's website as of 2024-10-18.
 # The special links are Mailchimp merge tags.
 THE_DAILY_BASE_CONFIG = BaseConfig(
     website_url="https://stanforddaily.com/",
