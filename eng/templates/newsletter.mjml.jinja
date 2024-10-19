@@ -95,4 +95,20 @@
             </mj-text>
         </mj-column>
     </mj-section>
+
+    <mj-section class="bg-dark">
+        <mj-column>
+            <mj-text class="text-white">
+                <p>
+                    Don't want to receive these emails anymore?
+                    <a href="{{ base_config.unsubscribe_url }}">
+                        Unsubscribe
+                        {% if base_config.user_email_address_tag %}
+                            for {{ base_config.user_email_address_tag }}
+                        {% endif %}
+                    </a>
+                </p>
+            </mj-text>
+        </mj-column>
+    </mj-section>
 {% endblock %}
