@@ -46,7 +46,7 @@ class BaseDesignConfig:
     secondary_color: str
 
 
-# All links and images are from The Daily's website as of 2024-10-18.
+# All links and images are from The Daily's website as of 2024-10-19.
 # The special links are Mailchimp merge tags.
 THE_DAILY_BASE_CONFIG = BaseConfig(
     name="The Stanford Daily",
