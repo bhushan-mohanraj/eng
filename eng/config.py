@@ -33,6 +33,19 @@ class BaseSocialConfig:
     """
 
 
+@dataclass
+class BaseDesignConfig:
+    """
+    The configuration of some frontend design for a newspaper's newsletters.
+    """
+
+    # The primary and secondary colors
+    # should be given as CSS-acceptable strings
+    # and readable on a white background.
+    primary_color: str
+    secondary_color: str
+
+
 # All links and images are from The Daily's website as of 2024-10-18.
 # The special links are Mailchimp merge tags.
 THE_DAILY_BASE_CONFIG = BaseConfig(
@@ -46,4 +59,10 @@ THE_DAILY_BASE_CONFIG = BaseConfig(
     tip_url="https://stanforddaily.com/tips/",
     donate_url="https://stanforddaily.com/donate/",
     submit_url="https://stanforddaily.com/submitting-to-the-daily/",
+)
+
+# All colors are from The Daily's website as of 2024-10-19.
+THE_DAILY_BASE_DESIGN_CONFIG = BaseDesignConfig(
+    primary_color="#8C1515",
+    secondary_color="#4D4F53",
 )

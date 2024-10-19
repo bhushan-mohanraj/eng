@@ -1,18 +1,16 @@
 <mjml lang="en">
     <mj-head>
-        {% set primary_color = "red" %}
-        {% set secondary_color = "gray" %}
 
         <mj-attributes>
-            <mj-class name="text-primary" color="{{ primary_color }}"/>
-            <mj-class name="text-secondary" color="{{ secondary_color }}"/>
+            <mj-class name="text-primary" color="{{ base_design_config.primary_color }}"/>
+            <mj-class name="text-secondary" color="{{ base_design_config.secondary_color }}"/>
             <mj-class name="text-light" color="white"/>
 
             <mj-class name="text-large" font-size="16px">
             <mj-class name="text-small" font-size="10px">
 
-            <mj-class name="bg-primary" background-color="{{ primary_color }}"/>
-            <mj-class name="bg-secondary" background-color="{{ secondary_color }}"/>
+            <mj-class name="bg-primary" background-color="{{ base_design_config.primary_color }}"/>
+            <mj-class name="bg-secondary" background-color="{{ base_design_config.secondary_color }}"/>
             <mj-class name="bg-dark" background-color="black"/>
         </mj-attributes>
     </mj-head>
