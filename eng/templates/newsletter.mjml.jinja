@@ -70,6 +70,13 @@
         <mj-column>
             <mj-text class="text-white">
                 <p>
+                    {{ base_config.name }}
+                    |
+                    <a href="{{ base_config.website_url }}">
+                        {{ base_config.website_display_url }}
+                    </a>
+                </p>
+                <p>
                     <a href="{{ base_config.join_url }}">
                         Click here to join our staff
                     </a>
