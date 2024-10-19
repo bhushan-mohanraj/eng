@@ -1,0 +1,39 @@
+{% extends "base.mjml.jinja" %}
+
+{% block header %}
+    <mj-section>
+        <mj-column>
+            <mj-text class="text-primary" align="left">
+                <a href="{{ base_config.website_url }}">{{ base_config.website_display_url }}</a>
+                | {{ today.strftime("%A, %B, %d, %Y") }}
+            </mj-text>
+            <mj-text class="text-primary" align="right">
+                {# Using Mailchimp merge tags. #}
+                <a href="*|ARCHIVE|*">
+                    Click to view this email in your browser
+                </a>
+            </mj-text>
+        </mj-column>
+    </mj-section>
+    <mj-section>
+        <mj-column>
+            <mj-image
+                src="{{ base_config.header_image_url }}"
+                href="{{ base_config.website_url }}"
+            />
+        </mj-column>
+    </mj-section>
+    <mj-section class="bg-primary">
+        <mj-text class="text-light" align="center">
+            <a href="{{ base_config.tip_url }}">
+                Submit Tips
+            </a>
+            <a href="{{ base_config.donate_url }}">
+                Donate
+            </a>
+            <a href="{{ base_config.submit_url }}">
+                Submit Work
+            </a>
+        </mj-text>
+    </mj-section>
+{% endblock %}
