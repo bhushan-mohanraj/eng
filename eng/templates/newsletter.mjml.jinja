@@ -5,10 +5,14 @@
         <mj-column>
             <mj-text class="text-primary" align="center">
                 <p>
-                    <a href="{{ base_config.website_url }}">{{ base_config.website_display_url }}</a>
-                    | {{ today.strftime("%A, %B, %d, %Y") }}
+                    <a href="{{ base_config.website_url }}">
+                        {{ base_config.website_display_url }}
+                    </a>
+                    |
+                    {{ today.strftime("%A, %B, %d, %Y") }}
                 </p>
             </mj-text>
+
             <mj-text class="text-primary" align="center">
                 <p>
                     <a href="{{ base_config.view_in_browser_url }}">
@@ -18,6 +22,7 @@
             </mj-text>
         </mj-column>
     </mj-section>
+
     <mj-section>
         <mj-column>
             <mj-image
@@ -26,6 +31,7 @@
             />
         </mj-column>
     </mj-section>
+
     <mj-section class="bg-primary">
         <mj-column>
             <mj-text class="text-light" align="center">
