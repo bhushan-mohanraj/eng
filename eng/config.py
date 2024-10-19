@@ -16,7 +16,10 @@ class BaseConfig:
 
     website_url: str
     website_display_url: str
+
     view_in_browser_url: str
+    unsubscribe_url: str
+    user_email_address_tag: str | None
 
     header_image_url: str
 
@@ -49,7 +52,7 @@ class BaseDesignConfig:
 
 
 # All links and images are from The Daily's website as of 2024-10-19.
-# The special links are Mailchimp merge tags.
+# The special links and tags are Mailchimp merge tags.
 THE_DAILY_BASE_CONFIG = BaseConfig(
     name="The Stanford Daily",
     address="456 Panama Mall, Stanford CA, 94305",
@@ -57,6 +60,8 @@ THE_DAILY_BASE_CONFIG = BaseConfig(
     website_url="https://stanforddaily.com/",
     website_display_url="stanforddaily.com",
     view_in_browser_url="*|ARCHIVE|*",
+    unsubscribe_url="*|UNSUB|*",
+    user_email_address_tag="*|EMAIL|*",
     header_image_url="https://stanforddaily.com/wp-content/uploads/2019/11/cropped-DailyLogo-CardinalRed.png",
     join_url="https://stanforddaily.com/join/",
     contact_url="https://stanforddaily.com/contact-us/",
