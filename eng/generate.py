@@ -10,7 +10,6 @@ import jinja2
 from eng.config import THE_DAILY_BASE_CONFIG
 from eng.config import THE_DAILY_BASE_DESIGN_CONFIG
 
-
 PACKAGE_NAME = "eng"
 
 

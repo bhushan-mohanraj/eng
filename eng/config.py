@@ -1,6 +1,5 @@
 from dataclasses import dataclass
 
-
 # TODO: Send `today` to the templates.
 
 
