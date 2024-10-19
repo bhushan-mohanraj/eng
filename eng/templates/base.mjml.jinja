@@ -13,6 +13,29 @@
             <mj-class name="bg-secondary" background-color="{{ base_design_config.secondary_color }}"/>
             <mj-class name="bg-dark" background-color="black"/>
         </mj-attributes>
+
+        <mj-style>
+            :root {
+                --primary-color: {{ base_design_config.primary_color }};
+                --secondary-color: {{ base_design_config.secondary_color }};
+            }
+
+            .text-primary {
+                color: var(--primary-color) !important;
+            }
+
+            .text-secondary {
+                color: var(--secondary-color) !important;
+            }
+
+            .text-small {
+                font-size: 10px !important;
+            }
+
+            .text-large {
+                font-size: 16px !important;
+            }
+        </mj-style>
     </mj-head>
     <mj-body>
         {% block header %}{% header %}
