@@ -13,4 +13,9 @@
             <mj-class name="bg-dark" background-color="black"/>
         </mj-attributes>
     </mj-head>
+    <mj-body>
+        {% block header %}{% header %}
+        {% block content %}{% endblock %}
+        {% block footer %}{% endblock %}
+    </mj-body>
 </mjml>
