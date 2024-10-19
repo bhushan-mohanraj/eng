@@ -1,5 +1,14 @@
 <mjml lang="en">
     <mj-head>
+        {# TODO: Make the font families used more configurable. #}
+        <mj-font
+            name="Crimson Pro"
+            href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        />
+        <mj-font
+            name="Libre Franklin"
+            href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+        />
 
         <mj-attributes>
             <mj-class name="bg-primary" background-color="{{ base_design_config.primary_color }}"/>
@@ -12,6 +21,10 @@
 
             <mj-class name="text-large" font-size="16px">
             <mj-class name="text-small" font-size="10px">
+
+            <mj-all font-family="Crimson Pro, Georgia, serif"/>
+            <mj-class name="font-serif" font-family="Crimson Pro, Georgia, serif"/>
+            <mj-class name="font-sans" font-family="Libre Franklin, Arial, sans-serif"/>
         </mj-attributes>
 
         <mj-style>
@@ -34,6 +47,14 @@
 
             .text-large {
                 font-size: 16px !important;
+            }
+
+            .font-serif {
+                font-family: "Crimson Pro", Georgia, serif !important;
+            }
+
+            .font-sans {
+                font-family: "Libre Franklin", Arial, sans-serif !important;
             }
         </mj-style>
     </mj-head>
