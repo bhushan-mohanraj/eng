@@ -8,8 +8,7 @@
                 | {{ today.strftime("%A, %B, %d, %Y") }}
             </mj-text>
             <mj-text class="text-primary" align="right">
-                {# Using Mailchimp merge tags. #}
-                <a href="*|ARCHIVE|*">
+                <a href="{{ base_config.view_in_browser_url }}">
                     Click to view this email in your browser
                 </a>
             </mj-text>
