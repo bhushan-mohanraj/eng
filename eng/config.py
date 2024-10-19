@@ -10,6 +10,8 @@ class BaseConfig:
     The base configuration for a newspaper.
     """
 
+    name: str
+
     website_url: str
     website_display_url: str
     view_in_browser_url: str
@@ -34,6 +36,7 @@ class BaseSocialConfig:
 # All links and images are from The Daily's website as of 2024-10-18.
 # The special links are Mailchimp merge tags.
 THE_DAILY_BASE_CONFIG = BaseConfig(
+    name="The Stanford Daily",
     website_url="https://stanforddaily.com/",
     website_display_url="stanforddaily.com",
     view_in_browser_url="*|ARCHIVE|*",
