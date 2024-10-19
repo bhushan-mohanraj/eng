@@ -11,6 +11,8 @@ class BaseConfig:
     """
 
     name: str
+    address: str
+    email_address: str
 
     website_url: str
     website_display_url: str
@@ -50,6 +52,8 @@ class BaseDesignConfig:
 # The special links are Mailchimp merge tags.
 THE_DAILY_BASE_CONFIG = BaseConfig(
     name="The Stanford Daily",
+    address="456 Panama Mall, Stanford CA, 94305",
+    email_address="eic@stanforddaily.com",
     website_url="https://stanforddaily.com/",
     website_display_url="stanforddaily.com",
     view_in_browser_url="*|ARCHIVE|*",
