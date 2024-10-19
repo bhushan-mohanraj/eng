@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-# TODO: Send `today` to the templates.
+# TODO: Send `datetime` to the templates.
 
 
 @dataclass
