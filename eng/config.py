@@ -1,7 +1,5 @@
 from dataclasses import dataclass
 
-# TODO: Send `datetime` to the templates.
-
 
 @dataclass
 class BaseConfig:

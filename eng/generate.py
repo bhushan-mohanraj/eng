@@ -3,6 +3,7 @@ Generate MJML for newsletters
 and convert that MJML to HTML for an email.
 """
 
+import datetime
 import pathlib
 
 import jinja2
@@ -28,6 +29,7 @@ def generate_mjml() -> str:
 
     return template.render(
         {
+            "datetime": datetime,
             "base_config": THE_DAILY_BASE_CONFIG,
             "base_design_config": THE_DAILY_BASE_DESIGN_CONFIG,
         }
