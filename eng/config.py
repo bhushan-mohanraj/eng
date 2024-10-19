@@ -16,6 +16,9 @@ class BaseConfig:
 
     header_image_url: str
 
+    join_url: str
+    contact_url: str
+
     tip_url: str
     donate_url: str
     submit_url: str
@@ -35,6 +38,8 @@ THE_DAILY_BASE_CONFIG = BaseConfig(
     website_display_url="stanforddaily.com",
     view_in_browser_url="*|ARCHIVE|*",
     header_image_url="https://stanforddaily.com/wp-content/uploads/2019/11/cropped-DailyLogo-CardinalRed.png",
+    join_url="https://stanforddaily.com/join/",
+    contact_url="https://stanforddaily.com/contact-us/",
     tip_url="https://stanforddaily.com/tips/",
     donate_url="https://stanforddaily.com/donate/",
     submit_url="https://stanforddaily.com/submitting-to-the-daily/",
