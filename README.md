@@ -17,11 +17,14 @@ python -m isort . --profile=black --sl # Sort imports
 
 ### Usage
 
+MJML should be installed via Node.
+The executable should be located at `node_modules/.bin/mjml`.
+
 ```bash
 python -m venv venv
 source venv/Scripts/activate # Git Bash on Windows
 python -m pip install -r requirements.txt
-python -m eng ...
+python -m eng
 ```
 
 ## TODO
