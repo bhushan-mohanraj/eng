@@ -5,9 +5,7 @@
         <mj-column>
             <mj-text mj-class="text-primary" align="center">
                 <p>
-                    <a href="{{ base_config.website_url }}">
-                        {{ base_config.website_display_url }}
-                    </a>
+                    <a href="{{ base_config.website_url }}">{{ base_config.website_display_url }}</a>
                     |
                     {{ datetime.date.today().strftime("%A, %B, %d, %Y") }}
                 </p>
@@ -15,9 +13,7 @@
 
             <mj-text mj-class="text-primary" align="center">
                 <p>
-                    <a href="{{ base_config.view_in_browser_url }}">
-                        Click to view this email in your browser
-                    </a>
+                    <a href="{{ base_config.view_in_browser_url }}">Click to view this email in your browser</a>
                 </p>
             </mj-text>
         </mj-column>
@@ -36,17 +32,11 @@
         <mj-column>
             <mj-text mj-class="text-light" align="center">
                 <p>
-                    <a href="{{ base_config.tip_url }}">
-                        Submit Tips
-                    </a>
+                    <a href="{{ base_config.tip_url }}">Submit Tips</a>
                     |
-                    <a href="{{ base_config.donate_url }}">
-                        Donate
-                    </a>
+                    <a href="{{ base_config.donate_url }}">Donate</a>
                     |
-                    <a href="{{ base_config.submit_url }}">
-                        Submit Work
-                    </a>
+                    <a href="{{ base_config.submit_url }}">Submit Work</a>
                 </p>
             </mj-text>
         </mj-column>
@@ -58,9 +48,7 @@
         <mj-column>
             <mj-text mj-class="text-white text-large" align="center">
                 <p>
-                    <a href="{{ base_config.tip_url }}">
-                        Are we missing something? Click here to send us a tip.
-                    </a>
+                    <a href="{{ base_config.tip_url }}">Are we missing something? Click here to send us a tip.</a>
                 </p>
             </mj-text>
         </mj-column>
@@ -72,25 +60,17 @@
                 <p>
                     {{ base_config.name }}
                     |
-                    <a href="{{ base_config.website_url }}">
-                        {{ base_config.website_display_url }}
-                    </a>
+                    <a href="{{ base_config.website_url }}">{{ base_config.website_display_url }}</a>
                 </p>
                 <p>
                     {{ base_config.address }}
                     |
-                    <a href="mailto:{{ base_config.email_address }}">
-                        {{ base_config.email_address }}
-                    </a>
+                    <a href="mailto:{{ base_config.email_address }}">{{ base_config.email_address }}</a>
                 </p>
                 <p>
-                    <a href="{{ base_config.contact_url }}">
-                        Contact us
-                    </a>
+                    <a href="{{ base_config.contact_url }}">Contact us</a>
                     |
-                    <a href="{{ base_config.join_url }}">
-                        Click here to join our staff
-                    </a>
+                    <a href="{{ base_config.join_url }}">Click here to join our staff</a>
                 </p>
             </mj-text>
         </mj-column>
@@ -101,12 +81,10 @@
             <mj-text mj-class="text-white">
                 <p>
                     Don't want to receive these emails anymore?
-                    <a href="{{ base_config.unsubscribe_url }}">
-                        Unsubscribe
-                        {% if base_config.user_email_address_tag %}
-                            for {{ base_config.user_email_address_tag }}
-                        {% endif %}
-                    </a>
+                    <a href="{{ base_config.unsubscribe_url }}">Unsubscribe</a>
+                    {% if base_config.user_email_address_tag %}
+                        for {{ base_config.user_email_address_tag }}.
+                    {% endif %}
                 </p>
             </mj-text>
         </mj-column>
